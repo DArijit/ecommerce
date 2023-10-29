@@ -1,0 +1,40 @@
+.navBarWrapper {
+  height: 44px;
+  background-color: white;
+  display: block;
+  margin: 0px;
+}
+
+.navBarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .navBarList {
+    flex-direction: column;
+  }
+}
+
+.navBarList li {
+  list-style-type: none;
+  padding: 1vw 2vw;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .navBarList li {
+    padding: 2vh 4vh;
+  }
+}
+
+.navBarList li:hover {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  transition-delay: 0.10s;
+}
